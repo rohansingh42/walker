@@ -1,4 +1,4 @@
-# ROS Turtlebot Walker - ENPM690
+# ROS Robot Walker with Obstacle Avoidance Behaviour- ENPM690
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Project Overview
