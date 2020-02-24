@@ -1,0 +1,19 @@
+<launch>
+    <arg name="record" default="false"/>
+    <arg name="record_time" default="30" />
+    <arg name="world" default="world02" />
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find my_worlds)/worlds/$(arg world).world"/>
+    </include>
+    <include file="$(find m2wr_description)/launch/rviz.launch">
+    </include>
+    <include file="$(find m2wr_description)/launch/spawn.launch">
+    </include>
+    <node
+        pkg="turtlebot_walker"
+        name="walker"
+        type="walker"
+        output="screen"
+        launch-prefix="gnome-terminal --command"
+    />
+</launch>
